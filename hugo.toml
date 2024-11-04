@@ -1,4 +1,50 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://qipan2333.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "QP's BLOG"
 theme = 'hugo-theme-relearn'
+
+defaultContentLanguage = 'en'
+
+[languages]
+  [languages.en]
+    languageCode = 'en'
+    languageName = 'English'
+    title = "QP's BLOG"
+    weight = 1
+  [[languages.en.menu.shortcuts]]
+    pre = '<i class="fa-fw fab fa-github"></i> '
+    name = 'GitHub Repo'
+    url = 'https://github.com/qipan2333/qipan2333.github.io'
+    weight = 10
+  [[languages.en.menu.shortcuts]]
+    pre = '<i class="fa-fw fas fa-tags"></i> '
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 20
+
+  [languages.zh]
+    languageCode = 'zh'
+    languageDirection = 'ltr'
+    languageName = '中文'
+    title = "QP's BLOG"
+    weight = 2
+  [[languages.zh.menu.shortcuts]]
+    pre = '<i class="fa-fw fab fa-github"></i> '
+    name = 'GitHub Repo'
+    url = 'https://github.com/qipan2333/qipan2333.github.io'
+    weight = 10
+
+[params]
+  [params.author]
+    email = 'qplovezh@gmail.com'
+    name = 'qipan2333'
+
+[[params.themeVariant]]
+    auto = ['learn', 'neon']
+    identifier = 'retro-auto'
+    name = 'Retro Learn/Neon'
+
+[outputs]
+  home = ['html', 'rss', 'print']
+  page = ['html', 'rss', 'print']
+  section = ['html', 'rss', 'print']
